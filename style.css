@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    --primary-color: #885207;
+    --secondary-color: #005f73;
+    --background-softwhite: #f9f9f9;
+    --Accent: #FF6B35;
+    --text-color: #333333;
+    --Footer-bg: #023047;
+    --cards-bg: #fff8f0;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.btn {
+    background-color: #F98866; 
+    color:white; 
+    padding: 0.75rem 1.5rem;
+    outline: none;
+    border: 2px solid #F98866;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(249, 136, 102, 0.2);
+
+}
+.btn:hover {
+    background-color: white;
+    color: #F98866;
+    border: 2px solid #F98866;
+    box-shadow: 0 4px 12px rgba(249, 136, 102, 0.3);
+  }
+a {
+    text-decoration: none;
+    transition: 0.3s;
+}
+body{
+    font-family: "Noto Sans", sans-serif;
+    background-color: #FFF2D7;
+}
+.container{
+    position: relative;
+    isolation: isolate;
+    min-height: 100vh;
+    max-width: var(--max-width);
+    margin-inline: auto;
+    overflow: hidden;
+}
+nav {
+    padding: 2rem 0 ;
+    padding-inline: 1rem ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.nav__links{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.nav__links a{
+    font-weight: 500;
+}
+.nav__links .logo{
+    font-family: 'Noto Sans' , sans-serif;
+    font-size: 24px;
+    font-weight:bold;
+    letter-spacing: 1px;
+}
+.logo .wander{
+    color: #F98866;
+}
+.logo .go{
+    color: #F98866;
+}
+.nav__right a {
+    color : #F98866;
+}
+.nav__links a:hover{
+    color: var(--primary-color);
+}
+.hero{
+    background-image: url('yourimage.webp');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+.hero::after{
+    content: "";
+    position: absolute;
+    inset:0;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 1;
+}
+.hero-content{
+    position: relative;
+    z-index:2;
+    max-width:700px;
+    padding: 0.75rem 1.5rem;
+}
+.hero h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+.hero p {
+    font-size: 1.2rem;
+    line-height:1.6;
+    white-space: pre-line;
+    margin-bottom: 2rem;
+}
+@keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .hero-content h1,
+  .hero-content p {
+    opacity: 0;
+    animation: fadeInUp 1s ease forwards;
+  }
+  .hero-content h1 {
+    animation-delay: 0.5s;
+  }
+  .hero-content p {
+    animation-delay: 1s;
+  }
+  
+ 
