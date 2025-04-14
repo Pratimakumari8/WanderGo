@@ -141,5 +141,171 @@ nav {
   .hero-content p {
     animation-delay: 1s;
   }
+.destinations{
+    padding: 4rem 1rem;
+    background-color: #FFF2D7;
+    text-align: center;
+}
+.destinations h2{
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #F98866;
+}
+.destination-grid{
+    display:flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap:2rem;
+    max-width: 100%;
+    overflow-x: auto;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+    padding-left: 1rem; 
+    scroll-behavior: smooth;
   
- 
+}
+.destination-card{
+    width:300px;
+    flex-shrink: 0;
+    margin-right: 2rem;
+    background-color: #fff8f0;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgb(34, 13, 13);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    display: inline-block;
+    white-space: normal;
+    
+}
+.destination-card img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    transform: transform 0.3s ease;
+}
+.destination-card:hover img{
+    transform: scale(1.05);
+}
+.destination-card h3{
+    font-size: 1.5rem;
+    margin:1rem 0 0.5rem;
+    color: #885207
+}
+.destination-card p{
+    padding: 0 1rem 1.5rem;
+    color: #444;
+    font-size:0.95rem;
+}
+.destination-card1 {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 1s ease;
+  }
+  .destination-card2 {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1.5s ease;
+  }
+  .destination-card3 {
+    opacity: 0;
+    transform: translateY(70px);
+    transition: all 2s ease;
+  }
+  .destination-card4 {
+    opacity: 0;
+    transform: translateY(90px);
+    transition: all 2.5s ease;
+  }
+  
+  .card-show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .newsletter {
+    background-color: #fff2d7;
+    padding: 3rem 1rem;
+    text-align: center;
+  }
+  
+  .newsletter h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #F98866;
+  }
+  
+  .newsletter p {
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    color: #444;
+  }
+  
+  .newsletter-form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .newsletter-form input[type="email"] {
+    padding: 0.75rem 1rem;
+    border: 2px solid #f98866;
+    border-radius: 8px;
+    width: 250px;
+  }
+  
+  .newsletter-form button {
+    padding: 0.75rem 1.5rem;
+    background-color: #f98866;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+  }
+  
+  .newsletter-form button:hover {
+    background-color: #d46c50;
+  }
+  
+  .footer {
+    background-color: #F98866;
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+  
+  .footer h3 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+  }
+  
+  .footer-socials {
+    margin: 1rem 0;
+  }
+  
+  .footer-socials a {
+    margin: 0 0.75rem;
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-socials a:hover {
+    color: #fff2d7;
+  }
+  
+  .footer-copy {
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    opacity: 0.8;
+  }
+  
