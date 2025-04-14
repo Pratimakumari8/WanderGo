@@ -1,13 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-:root{
-    --primary-color: #885207;
-    --secondary-color: #005f73;
-    --background-softwhite: #f9f9f9;
-    --Accent: #FF6B35;
-    --text-color: #333333;
-    --Footer-bg: #023047;
-    --cards-bg: #fff8f0;
-}
 *{
     margin: 0;
     padding: 0;
